@@ -1,0 +1,132 @@
+.loginsignup {
+  width: 100%;
+  height: 100vh;
+  background: #66c0f4;
+  padding-top: 50px;
+}
+
+.loginsignup-container {
+  width: 580px;
+  height: 600px;
+  background: #181a21;
+  margin: auto;
+  padding: 40px 60px;
+}
+
+.loginsignup-container h1 {
+  margin: 20px 0px;
+  color: #1a9fff;
+}
+
+.loginsignup-container button {
+  width: 580px;
+  height: 72px;
+  color: white;
+  background: rgb(6, 191, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 191, 255, 1) 0%,
+    rgba(35, 136, 255, 1) 80%
+  );
+  margin-top: 30px;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loginsignip-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px;
+}
+
+.loginsignip-fields input {
+  width: 100%;
+  height: 72px;
+  padding-left: 20px;
+  border: 1px solid #393c44;
+  background: #393c44;
+  outline: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.loginsignip-fields input::placeholder {
+  color: #ffffff;
+}
+
+.loginsignup-login {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.loginsignup-login span {
+  color: #1a9fff;
+  font-weight: 600;
+}
+
+.loginsignup-agree {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  .loginsignup {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .loginsignup-container {
+    width: auto;
+    max-width: 500px;
+    max-height: 550px;
+  }
+  .loginsignup-container h1 {
+    margin: 10px 0px;
+  }
+  .loginsignip-fields {
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .loginsignip-fields input {
+    height: 65px;
+    width: 93%;
+  }
+  .loginsignup-container button {
+    width: 100%;
+  }
+  .loginsignup-login {
+    font-size: 16px;
+  }
+  .loginsignup-agree {
+    font-size: 14px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .loginsignup-container {
+    padding: 20px 30px;
+  }
+  .loginsignup-container h1 {
+    font-size: 24px;
+  }
+  .loginsignip-fields {
+    margin-top: 20px;
+  }
+  .loginsignip-fields input {
+    height: 50px;
+  }
+  .loginsignup-container button {
+    height: 50px;
+    font-size: 16px;
+  }
+}

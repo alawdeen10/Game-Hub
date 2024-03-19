@@ -1,0 +1,137 @@
+.game-category {
+  overflow: hidden;
+  background: #1b2838;
+}
+
+.gamecategory-banner {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  height: 50vh;
+}
+
+.gamecategory-indexSort {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.gamecategory-indexSort button {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 75px;
+  background: rgb(6, 191, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 191, 255, 1) 0%,
+    rgba(35, 136, 255, 1) 80%
+  );
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.gamecategory-products {
+  margin: 20px 170px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
+}
+
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: rgb(6, 191, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 191, 255, 1) 0%,
+    rgba(35, 136, 255, 1) 80%
+  );
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  .gamecategory-banner {
+    margin: 20px auto;
+    width: 90%;
+  }
+  .gamecategory-indexSort {
+    width: 90%;
+    margin: auto;
+  }
+  .gamecategory-sort {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .gamecategory-indexSort p {
+    font-size: 12px;
+  }
+  .gamecategory-products {
+    width: 90%;
+    margin: 10px auto;
+    row-gap: 40px;
+  }
+  .gamecategory-products .item {
+    margin: auto;
+    margin-left: -20px;
+  }
+  .shopcategory-loadmore {
+    margin-top: 35px;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .gamecategory-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-left: 130px;
+  }
+  .gamecategory-products .item {
+    display: grid;
+    margin: auto;
+    margin-left: -20px;
+  }
+  .shopcategory-loadmore {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .gamecategory-products {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+  }
+  .gamecategory-banner {
+    width: 95%;
+  }
+  .gamecategory-products {
+    width: 95%;
+  }
+  .shopcategory-loadmore {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .footer {
+    margin-top: -85px;
+  }
+}
+@media (max-width: 500px) {
+  .gamecategory-products {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 70px;
+  }
+  .gamecategory-indexSort {
+    margin-left: 5px;
+  }
+}
